@@ -1119,6 +1119,15 @@ console.log("Cauldrons de madera: " + woodCauldrons);
 
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
+for (let i = 0; i < totalCauldronsArray.length; i++) {
+    const cauldrons = totalCauldronsArray[i];
+    
+    if (cauldrons.name === "Brassicaceae"){
+
+        console.log("Brassicaceae's id & description: " + cauldrons.id + ", " + cauldrons.magic_description);
+    }
+}
+
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
