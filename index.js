@@ -1145,6 +1145,9 @@ console.log("Summer damaged cauldrons: " + summerDamagedPercentage);
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
+console.log("aaaaa");
+
+
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
 
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
