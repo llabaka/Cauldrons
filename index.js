@@ -1023,15 +1023,10 @@ console.log("Cantidad total:", totalCauldrons);
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
 
-const winterCauldrons2 = data.cauldrons.winter_seasson.length;
-const summerCauldrons2 = data.cauldrons.summer_seasson.length;
-const autumnCauldrons2 = data.cauldrons.autumn_seasson.length;
-const springCauldrons2 = data.cauldrons.spring_seasson.length;
-
-console.log("Winter Cauldrons: " + winterCauldrons2);
-console.log("Summer Cauldrons: " + summerCauldrons2);
-console.log("Autumn Cauldrons: " + autumnCauldrons2);
-console.log("Winter Cauldrons: " + springCauldrons2);
+console.log("Winter Cauldrons: " + winterCauldrons);
+console.log("Summer Cauldrons: " + summerCauldrons);
+console.log("Autumn Cauldrons: " + autumnCauldrons);
+console.log("Winter Cauldrons: " + springCauldrons);
 
 // 3.- Mostrar la cantidad de Cauldrons rotos agrupados por temporada
 
@@ -1129,6 +1124,11 @@ for (let i = 0; i < totalCauldronsArray.length; i++) {
 }
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
+
+for (let i = 0; i < data.winterCauldron.length; i++) {
+    const element = array[i];
+    
+}
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
