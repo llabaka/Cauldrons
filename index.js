@@ -1149,9 +1149,9 @@ let plexiGlassCounter = 0;
 
 for (let i = 0; i < data.cauldrons.winter_seasson.length; i++) {
 
-    const winterCauldron2 = data.cauldrons.winter_seasson[i];
+    const winterCauldron = data.cauldrons.winter_seasson[i];
 
-    if (winterCauldron2.type === "Plexiglass") {
+    if (winterCauldron.type === "Plexiglass") {
 
         plexiGlassCounter++;
     }
@@ -1162,5 +1162,19 @@ let plexiglassWinterCauldrons = (100 * plexiGlassCounter) / winterCauldrons;
 console.log("Plexiglass cauldrons in winter: " + plexiglassWinterCauldrons);
 
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
+
+let notDamagedAndOrangeCounter = 0;
+
+for (let i = 0; i < totalCauldronsArray.length; i++) {
+
+    const cauldron = totalCauldronsArray[i];
+    
+    if (cauldron.color === "Orange" && !cauldron.damaged){
+
+        notDamagedAndOrangeCounter++;
+    }
+}
+
+console.log("Orange and good state cauldrons: " + notDamagedAndOrangeCounter);
 
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
