@@ -1115,6 +1115,7 @@ console.log("Cauldrons de madera: " + woodCauldrons);
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
 for (let i = 0; i < totalCauldronsArray.length; i++) {
+
     const cauldrons = totalCauldronsArray[i];
     
     if (cauldrons.name === "Brassicaceae"){
@@ -1125,10 +1126,22 @@ for (let i = 0; i < totalCauldronsArray.length; i++) {
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
-for (let i = 0; i < data.winterCauldron.length; i++) {
-    const element = array[i];
-    
-}
+let winterDamagedPercentage = (100 * winterBrokenCauldrons) / winterCauldrons;
+
+console.log("Winter damaged cauldrons: " + winterDamagedPercentage);
+
+let springDamagedPercentage = (100 * springBrokenCauldrons) / springCauldrons;
+
+console.log("Spring damaged cauldrons: " + springDamagedPercentage);
+
+let autumnDamagedPercentage = (100 * autumnBrokenCauldrons) / autumnCauldrons;
+
+console.log("Autumn damaged cauldrons: " + autumnDamagedPercentage);
+
+let summerDamagedPercentage = (100 * summerBrokenCauldrons) / summerCauldrons;
+
+console.log("Summer damaged cauldrons: " + summerDamagedPercentage);
+
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
